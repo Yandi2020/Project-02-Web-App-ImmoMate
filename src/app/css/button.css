@@ -1,0 +1,19 @@
+#my-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    font-size: large;
+    border-radius: 10px;
+    outline:none;
+}
+
+#my-button:hover {
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 2px 1px rgba(0, 0, 0, 0.3);
+}
+

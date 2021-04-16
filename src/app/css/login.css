@@ -1,0 +1,83 @@
+.login {
+    background-color: var(--bgwhite);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto 1px;
+    width: 700px;
+}
+
+.login h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.login .email-input,
+.login .password-input {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 15px;
+}
+
+.login .email-input label,
+.login .password-input label {
+    color: var(--medium);
+    margin-right: 5px;
+}
+
+.login .email-input .email-field,
+.login .password-input .password-field {
+    padding: 3px 6px;
+    border: 1px solid var(--medium);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.login .email-input .email-error,
+.login .password-input .password-error,
+.login .auth-error {
+    color: var(--danger);
+    font-size: 0.8em;
+}
+
+.login .auth-error {
+    text-align: center;
+}
+
+.login #my-button {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 710px) {
+    .login {
+        width: 500px;
+    }
+    .login .email-input .email-field,
+    .login .password-input .password-field {
+        width: 100%;
+    }
+    .login .email-input,
+    .login .password-input {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .login {
+        width: 350px;
+    }
+    .login .email-input,
+    .login .password-input {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+

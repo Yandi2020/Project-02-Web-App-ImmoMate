@@ -1,0 +1,80 @@
+.small-card {
+    width: 280px;
+    background-color: var(--light);
+    justify-self: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.small-card img {
+    width: 100%;
+    height: 186px;
+    border-radius: 20px 20px 0 0;
+}
+
+.small-card .content {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.small-card .title-container .title,
+.small-card .title-container p,
+.small-card .company {
+    width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.small-card .title-container {
+    margin-bottom: 25px;
+}
+
+.small-card .title-container .title {
+    display: inline-block;
+    /* Link tag has to display as inline block, otherwise following not working */
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.small-card .title-container .title:hover {
+    color: var(--primary);
+}
+
+.small-card .title-container p {
+    font-size: 0.9em;
+}
+
+.small-card .detail {
+    margin-bottom: 20px;
+}
+
+.small-card .detail div {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: var(--border);
+}
+
+.small-card .detail div span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.small-card .company {
+    font-size: 0.9em;
+}
+
+.small-card #my-button {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 0.9em;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.small-card .listing-error {
+    color: var(--danger);
+    font-size: 0.8em;
+}
+

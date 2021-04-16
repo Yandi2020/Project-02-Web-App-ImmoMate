@@ -1,0 +1,113 @@
+.card {
+    background-color: var(--bgwhite);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.card .img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.card .summary {
+    margin: auto 20px;
+    width: 100%;
+}
+
+.card .title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .title {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--dark);
+    /* title ellipsis */
+    width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card .title-icon {
+    margin-right: 5px;
+}
+
+.card .title-heart-outline:hover {
+    color: var(--primary)
+}
+
+.card .title-heart {
+    color: var(--primary)
+}
+
+.card .title:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.card .details {
+    margin-top: 15px;
+}
+
+.card .details p{
+    margin-bottom: 15px;
+}
+
+.card .details span {
+    margin-right: 20px;
+    font-weight: 700;
+    color: var(--tertiary);
+}
+
+.card .contact-info {
+    margin-top: 25px;
+    color: var(--medium);
+}
+
+.card .contact-info p {
+    margin-bottom: 2px;
+}
+
+@media screen and (max-width: 970px) {
+    .card {
+        max-width: 700px;
+    }
+    .card .img {
+        width: 35%;
+    }
+    .card .title {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .card {
+        display: block;
+        max-width: 500px;
+    }
+    .card .img {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .card .summary {
+        margin: 10px auto;
+        width: 100%;
+    }
+    .card .details p {
+        width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .card {
+        max-width: 350px;
+    }
+}
+

@@ -1,0 +1,69 @@
+/* for both favourite, posted and empty list of messages-list pages */
+
+.favourite,
+.posted,
+.messages-list {
+    background-color: var(--bgwhite);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto 1px;
+}
+
+.favourite h3,
+.posted h3,
+.messages-list h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+.favourite .list,
+.posted .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media screen and (max-width: 970px) {
+    .favourite,
+    .posted,
+    .messages-list {
+        width: 800px;
+    }
+    .favourite .list,
+    .posted .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .favourite,
+    .posted,
+    .messages-list {
+        width: 670px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .favourite,
+    .posted,
+    .messages-list {
+        width: 500px;
+    }
+    .favourite .list,
+    .posted .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .favourite,
+    .posted,
+    .messages-list {
+        width: 350px;
+    }
+}
+
+
+

@@ -1,0 +1,98 @@
+/* about page */
+
+.about, 
+.contact {
+    background-color: var(--bgwhite);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto 1px;
+    width: 850px;
+}
+
+.about h3,
+.contact h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+.about p {
+    margin-bottom: 25px;
+    line-height: 1.3em;
+    letter-spacing: 0.4px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 860px) {
+    .about {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .about {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .about {
+        width: 350px;
+    }
+}
+
+/* contact page */
+
+.contact .section {
+    background-color: var(--light);
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.contact .icon-container {
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .icon-container .icon {
+    color: var(--white);
+    font-size: 1.5em;
+}
+
+.contact .section h4 {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 860px) {
+    .contact {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .contact {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .contact {
+        width: 350px;
+    }
+    .contact .section {
+        padding: 12px;
+    }
+    .contact .section p {
+        font-size: 0.75em;
+    }
+}
+
+

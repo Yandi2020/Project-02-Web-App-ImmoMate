@@ -1,0 +1,97 @@
+.register {
+    background-color: var(--bgwhite);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto 1px;
+    width: 700px;
+}
+
+.register h3 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.register .select-input,
+.register .text-input,
+.register .email-input,
+.register .password-input {
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 15px;
+}
+
+.register .select-input label,
+.register .text-input label,
+.register .email-input label,
+.register .password-input label {
+    color: var(--medium);
+    margin-right: 5px;
+}
+
+.register .select-input .select-field,
+.register .text-input .text-field,
+.register .email-input .email-field,
+.register .password-input .password-field {
+    padding: 3px 6px;
+    border: 1px solid var(--medium);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.register .select-input .select-error,
+.register .text-input .text-error,
+.register .email-input .email-error,
+.register .password-input .password-error,
+.register .auth-error {
+    color: var(--danger);
+    font-size: 0.8em;
+}
+
+.register .auth-error {
+    text-align: center;
+}
+
+.register #my-button {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 710px) {
+    .register {
+        width: 500px;
+    }
+    .register .select-input .select-field,
+    .register .text-input .text-field,
+    .register .email-input .email-field,
+    .register .password-input .password-field {
+        width: 100%;
+    }
+    .register .select-input,
+    .register .text-input,
+    .register .email-input,
+    .register .password-input {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .register {
+        width: 350px;
+    }
+    .register .select-input,
+    .register .text-input,
+    .register .email-input,
+    .register .password-input {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+
+

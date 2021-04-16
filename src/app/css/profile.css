@@ -1,0 +1,87 @@
+.profile {
+    background-color: var(--bgwhite);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 50px auto 1px;
+    width: 700px;
+}
+
+.profile .user-container {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--light);
+}
+
+.profile .user-container img {
+    width: 15%;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.profile .user-container .user {
+    align-self: center;
+}
+
+.profile .user-container .user .name {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.profile .user-container .user .email {
+    color: var(--medium);
+}
+
+.profile .form {
+    margin-top: 25px;
+}
+
+.profile .form h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+
+.profile .password-input {
+    margin-bottom: 10px;
+}
+
+.profile .password-input label {
+    color: var(--medium);
+    margin-right: 5px;
+}
+
+.profile .password-input .password-field {
+    padding: 3px 6px;
+    border: 1px solid var(--medium);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.profile .password-input .password-error,
+.profile .auth-error {
+    color: var(--danger);
+    font-size: 0.8em;
+}
+
+.profile #my-button {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 710px) {
+    .profile {
+        width: 500px;
+    }
+    .profile .password-input .password-field {
+        width: 340px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .profile {
+        width: 350px;
+    }
+    .profile .password-input .password-field {
+        width: 300px;
+    }
+}
+

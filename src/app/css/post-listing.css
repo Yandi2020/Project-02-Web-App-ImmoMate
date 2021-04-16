@@ -1,0 +1,170 @@
+.post-listing h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+
+.post-listing .images-upload {
+    padding: 30px 0;
+    border-bottom: var(--border);
+}
+
+.post-listing .images-upload label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.post-listing .images-upload .container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-listing .images-upload .icon {
+    margin-right: 5px;
+    font-size: 25px; 
+}
+
+.post-listing .images-upload .error,
+.post-listing .images-upload .images-error,
+.post-listing .listing-error {
+    font-size: 0.8em;
+    color: var(--danger);
+}
+
+.post-listing .listing-error {
+    text-align: center;
+}
+
+.post-listing .images-upload .preview {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(auto, 150px);
+    gap: 10px;
+}
+
+.post-listing .images-upload .preview img {
+    width: 100%;
+    height: 100%;
+}
+
+.post-listing .information,
+.post-listing .contact,
+.post-listing .description {
+    background-color: var(--bgwhite);
+    padding: 30px;
+    border-radius: 20px;
+    width: 700px;
+    margin: 30px auto 30px;
+}
+
+.post-listing .information .title,
+.post-listing .contact .title,
+.post-listing .description .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-listing .information .icon,
+.post-listing .contact .icon,
+.post-listing .description .icon {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.post-listing .information .inputs,
+.post-listing .contact .inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.post-listing .information .text-input,
+.post-listing .information .select-input,
+.post-listing .contact .text-input, 
+.post-listing .contact .select-input,
+.post-listing .contact .email-input {
+    margin-bottom: 12px;
+}
+
+.post-listing .information .text-input label,
+.post-listing .information .select-input label,
+.post-listing .contact .text-input label,
+.post-listing .contact .select-input label,
+.post-listing .contact .email-input label {
+    color: var(--medium);
+    margin-right: 5px;
+}
+
+.post-listing .information .text-input .text-field,
+.post-listing .information .select-input .select-field,
+.post-listing .contact .text-input .text-field,
+.post-listing .contact .select-input .select-field,
+.post-listing .contact .email-input .email-field,
+.post-listing .description .textarea-input .textarea-field {
+    padding: 3px 6px;
+    border: 1px solid var(--medium);
+    border-radius: 5px;
+}
+
+.post-listing .information .text-input .text-error,
+.post-listing .information .select-input .select-error,
+.post-listing .contact .text-input .text-error,
+.post-listing .contact .select-input .select-error,
+.post-listing .contact .email-input .email-error,
+.post-listing .description .textarea-input .textarea-error {
+    color: var(--danger);
+    font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 970px) {
+    .post-listing {
+        max-width: 700px;
+    }
+    .post-listing .images-upload .preview {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    .post-listing {
+        max-width: 500px;
+    }
+    .post-listing .images-upload .preview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .post-listing .information,
+    .post-listing .contact,
+    .post-listing .description {
+        width: 500px;
+    }
+    .post-listing .information .inputs,
+    .post-listing .contact .inputs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .post-listing .description .textarea-input .textarea-field {
+        width: 30em;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .post-listing {
+        max-width: 350px;
+    }
+    .post-listing .information,
+    .post-listing .contact,
+    .post-listing .description {
+        width: 350px;
+    }
+    .post-listing .description .textarea-input .textarea-field {
+        width: 22em;
+        height: 18em;
+    }
+}
+
+
+

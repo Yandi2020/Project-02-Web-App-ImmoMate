@@ -1,0 +1,133 @@
+.message main {
+    padding: 10px;
+    height: 65vh;
+    margin: 10vh 0 10vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgwhite);
+}
+
+.message main::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+.message main::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+.message main::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+
+.message form {
+    height: 8vh;
+    background-color: var(--bgwhite);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    font-size: 1.5em;
+}
+
+.message form input {
+    width: 100%;
+    font-size: 0.7em;
+    background-color: var(--bgwhite);
+    color: var(--dark);
+    outline: none;
+    border: none;
+    padding: 0 10px;
+}
+
+.message form button {
+    width: 10%;
+    outline: none;
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.message form button .send {
+    color: var(--white);
+    transform: rotate(-30deg);
+}
+
+.message .chat {
+    display: flex;
+}
+
+.message .chat p {
+    max-width: 500px;
+    margin-bottom: 15px;
+    line-height: 1.3em;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.message .chat .time {
+    font-size: 0.7em;
+    color: var(--medium);
+}
+
+.message .chat.sent .time {
+    text-align: right; 
+}
+
+.message .sent {
+    justify-content: flex-end;
+}
+
+.message .sent p {
+    background-color: rgba(78,205,196, 0.5);
+}
+
+.message .received {
+    justify-content: flex-start;
+}
+
+.message .received p {
+    background-color: rgba(189,192,196, 0.5);
+}
+
+@media screen and (max-width: 970px) {
+    .message {
+        width: 700px;
+    }
+    .message form button {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .message {
+        width: 500px;
+    }
+    .message form button {
+        width: 20%;
+    }
+    .message .chat p {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .message {
+        width: 350px;
+    }
+    .message form button {
+        width: 25%;
+    }
+    .message .chat p {
+        width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
